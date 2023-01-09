@@ -16,11 +16,29 @@ html {
 }
 
 .container {
-  margin: 20% 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  margin: 20% 0 0 0;
+  align-items: center;
+}
+
+.btn {
+  width: 45%;
+  padding: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+
+  border: none;
+  border-radius: 1rem;
+  background-color: #ffc93c;
+}
+
+.content {
   display: grid;
   row-gap: 0.5rem;
   column-gap: 0.5rem;
   grid-template-columns: repeat(16, 3rem);
+  grid-template-rows: repeat(16, 3rem);
 }
 
 .box {

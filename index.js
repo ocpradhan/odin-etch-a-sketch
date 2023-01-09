@@ -1,13 +1,15 @@
 "use: strict";
 
 // Targeting the elements
-const container = document.querySelector(".container");
+const content = document.querySelector(".content");
+const btn = document.querySelector(".btn");
 
+// Function for creating multiple divs
 const createDivs = (divs) => {
   for (let i = 0; i < divs; i++) {
     let divElement = document.createElement("div");
     divElement.className = "box";
-    container.appendChild(divElement);
+    content.appendChild(divElement);
   }
 };
 
