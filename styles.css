@@ -24,9 +24,12 @@ html {
 }
 
 .box {
-  background-color: #fc5c65;
-  border: 0.1rem solid #eb3b5a;
+  background-color: #0081c9;
   width: 1rem;
   height: auto;
   padding: 1rem;
+}
+
+.box:hover {
+  background-color: #5bc0f8;
 }
