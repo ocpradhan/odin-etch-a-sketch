@@ -22,6 +22,14 @@ const inputUser = () => {
 
   if (promptUser <= 100) {
     createDivs(promptUser);
+    let boxes = document.querySelectorAll(".box");
+    for (let i = 0; i < boxes.length; i++) {
+      boxes[i].addEventListener("mouseenter", (e) => {
+        e.preventDefault();
+
+        boxes[i].style.backgroundColor = "red";
+      });
+    }
   } else {
     alert("Please enter a number less than or equal to 0");
   }
