@@ -12,8 +12,8 @@ const createDivs = (squaresOnSide) => {
     divElement.className = "box";
     content.appendChild(divElement);
   }
-  content.style.gridTemplateColumns = `repeat(${squaresOnSide}, 3rem)`;
-  content.style.gridTemplateRows = `repeat(${squaresOnSide}, 3rem)`;
+  content.style.gridTemplateColumns = `repeat(${squaresOnSide}, 2fr)`;
+  content.style.gridTemplateRows = `repeat(${squaresOnSide}, 2fr)`;
 };
 
 // Function for taking input from the user
