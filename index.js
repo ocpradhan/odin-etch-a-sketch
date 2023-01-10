@@ -16,6 +16,16 @@ const createDivs = (squaresOnSide) => {
   content.style.gridTemplateRows = `repeat(${squaresOnSide}, 2fr)`;
 };
 
+// Function for creating random RGB value
+const randomRGB = () => {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+
+  let rgbColor = `rgb(${red}, ${green}, ${blue})`;
+  return rgbColor;
+};
+
 // Function for taking input from the user
 const inputUser = () => {
   promptUser = Number(prompt("Enter the number of squares/side"));
@@ -27,7 +37,7 @@ const inputUser = () => {
       boxes[i].addEventListener("mouseenter", (e) => {
         e.preventDefault();
 
-        boxes[i].style.backgroundColor = "red";
+        boxes[i].style.backgroundColor = randomRGB();
       });
     }
   } else {
@@ -45,3 +55,5 @@ btn.addEventListener("click", (e) => {
   // Taking inout from the user
   inputUser();
 });
+
+console.log(randomRGB());

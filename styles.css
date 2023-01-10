@@ -45,7 +45,8 @@ html {
 }
 
 .box {
-  background-color: #0081c9;
+  background-color: #fff;
+  border: 0.05rem solid grey;
   /* width: 1rem; */
   /* height: auto;
   padding: 1rem; */
